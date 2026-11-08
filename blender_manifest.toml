@@ -1,0 +1,36 @@
+schema_version = "1.0.0"
+
+id = "vortex_map_importer"
+version = "1.2.0"
+name = "Vortex Map Importer"
+tagline = "Import and export Vortex .vrtx maps"
+maintainer = "barbq"
+type = "add-on"
+
+blender_version_min = "5.2.0"
+
+license = ["SPDX:MIT"]
+copyright = ["2026 barbq"]
+
+website = "https://playvortex.io"
+
+tags = ["Import-Export", "Object", "Scene"]
+
+[permissions]
+files = "Read and write Vortex .vrtx project files on disk"
+
+[build]
+paths_exclude_pattern = [
+  "__pycache__/",
+  ".vscode/",
+  "dev/",
+  "dist/",
+  "build/",
+  "/.git/",
+  "/.github/",
+  "/github/",
+  "/.gitignore",
+  "/*.zip",
+  "*.blend1",
+  "build.bat",
+]
